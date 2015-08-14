@@ -9,6 +9,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../paper-spinner/paper-spinner.html">
+<link rel="import" href="../paper-checkbox/paper-checkbox.html">
 
 <!--
 An element providing a solution to no problem in particular.
@@ -27,7 +28,7 @@ Example:
       box-sizing: border-box;
     }
     .welcome {
-      background-color: blue; 
+      background-color: #800020; 
     }
   </style>
 
@@ -43,8 +44,16 @@ Example:
 
       <paper-spinner alt="I'm Spinning" active></paper-spinner>
       <paper-spinner alt="I'm Spinning" active></paper-spinner>
-      <paper-spinner alt="I'm Spinning" active></paper-spinner><br>      
-      <button onclick="toggle(event)">Spin me!</button>   
+      <paper-spinner alt="I'm Spinning" active></paper-spinner><br><br>      
+      <button onclick="toggle(event)">Stop/Spin</button><br><br>
+
+      <h2>Select Your Favorite Teams</h2>
+
+      <paper-checkbox>Redskins</paper-checkbox><br>
+      <paper-checkbox>Wizards</paper-checkbox><br>
+      <paper-checkbox>Capitals</paper-checkbox><br>
+      <paper-checkbox>Nationals</paper-checkbox><br>
+      <paper-checkbox>Terps</paper-checkbox><br>
     
   </template>
 
